@@ -6,14 +6,16 @@ public class square {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int velikost = sc.nextInt();
-        for (int i = 1; i <= velikost * velikost ; i++){
-            if (i % velikost == 0){
-                System.out.println(i);
-                //println jakoby logicky udela novej line, takze pri kazdym delitelnym to shodi dolu
+        for (int i = 1; i <= velikost; i++){
+            for (int j = 0; j < velikost; j++) {
+                if ((j+i) % 2 == 0){
+                    System.out.print("X ");
             } else {
-                System.out.print(i+" ");
-                //tadyto tam jenom hodi tu mezeru
+                    System.out.print("O ");
+                }
+
             }
+            System.out.println();
         }
 
     }
