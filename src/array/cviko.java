@@ -1,5 +1,7 @@
 package array;
 
+import java.util.Arrays;
+
 public class cviko {
     public static void main(String[] args) {
         int[] pole = {5, 32, 21, 15};
@@ -16,6 +18,7 @@ public class cviko {
         for (int i = 0; i < pole2.length; i++) {
             System.out.println(pole2[i]);
         }
+        System.out.println(Arrays.toString(pole2));
     }
 
     }
