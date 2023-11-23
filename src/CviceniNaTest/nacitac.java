@@ -13,4 +13,5 @@ public class nacitac {
         }
         System.out.println(num);
     }
+
 }
