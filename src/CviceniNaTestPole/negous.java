@@ -8,7 +8,7 @@ public class negous {
         int[] array = new int[10];
         int i = 0;
         int kont = 0;
-        while(i < 10){
+        while(i < array.length){
             kont = sc.nextInt();
             if (kont >= 10 && kont <=100){
                 array[i] = kont;
