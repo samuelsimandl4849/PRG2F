@@ -8,21 +8,18 @@ public class PrimeNumbers {
         Scanner sc = new Scanner(System.in);
         System.out.println("Zadej maximalni hranici");
         int input = sc.nextInt();
-        boolean prime;
+        outer:
         for (int i = 2; i < input; i++) {
-            prime = true;
+
+            inner:
             for (int j = 2; j < i; j++) {
-
                 if (i % j == 0) {
-                    prime = false;
+                   continue outer;
                 }
-
             }
-
-            if (prime) {
-                System.out.println(i);
-            }
+            System.out.println(i);
         }
     }
-
 }
+
+
