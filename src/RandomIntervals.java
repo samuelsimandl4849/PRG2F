@@ -1,3 +1,5 @@
+import javax.swing.*;
+
 public class RandomIntervals {
 
     public static void main(String[] args) {
