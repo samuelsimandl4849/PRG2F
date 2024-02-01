@@ -44,6 +44,19 @@ public class MatrixPractice {
             System.out.println();
         }
 
+
+        //nasobilka: uzivatel zada N vygeneruju + vypisu 2D pole s nasobilkou
+        System.out.println("Zadej cislo:");
+        input = sc.nextInt();
+        int[][] multiplicationTable = new int[input][input];
+        for (int i = 0; i < multiplicationTable.length; i++) {
+            for (int j = 0; j < multiplicationTable[i].length; j++) {
+                multiplicationTable[i][j] = (j+1)*(i+1);
+                System.out.print(multiplicationTable[i][j] + "\t");
+            }
+            System.out.println();
+        }
+
     }
 
 }
