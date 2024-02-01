@@ -16,6 +16,7 @@ public class MultipleArrays {
         System.out.println(matrix[1][2]);
 
         int[][] generatedMatrix = new int[5][];
+        int[][][] something = new int[10][][];
 
         //nepouziva se
         generatedMatrix[3] = new int[2];
