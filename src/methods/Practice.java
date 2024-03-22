@@ -27,24 +27,17 @@ public class Practice {
 
     //time convert
     public static String minuteConvert(int seconds){
-        if (seconds <= 0){
-            return "0:0:0";
-        }
+        String time;
+        int min;
+        int sec;
 
-        int hours = seconds / 3600;
-        int min = (seconds % 3600)/60;
-        int sec = seconds % 60;
-
-        return hours + ":" + min + ":" + sec;
+        return "tbd";
     }
-
-
 
     public static void main(String[] args) {
         greetings("Carl");
         greetings("Simonne");
         int area = rectangleArea(4, 5);
         System.out.println(Arrays.toString(randomArray(10, 50, 100)));
-        System.out.println(minuteConvert(30));
     }
 }
