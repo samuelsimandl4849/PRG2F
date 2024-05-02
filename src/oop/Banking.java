@@ -2,19 +2,49 @@ package oop;
 
 public class Banking {
     public static void main(String[] args) {
-        BankAccount fanda = new BankAccount();
-        fanda.balance = 5000;
-        fanda.owner = "Franta";
-        fanda.printBalance();
-        fanda.deposit(5500.50);
-        fanda.printBalance();
+        BankAccount bc = new BankAccount(500000.1,"Karel", 987456112);
+        System.out.println("Ucet vlastni " + bc.ownerName);
+        System.out.println("Ucet ma cislo " + bc.bankID);
+//        System.out.println("Na ucte je " + bc.balance);
 
-        fanda.withdraw(2000);
-        fanda.withdraw(9999999);
+    }
 
-        BankAccount pepa = new BankAccount();
-        pepa.owner = "Pepa";
-        pepa.balance = 1234;
-        pepa.printBalance();
+} class BankAccount{
+    private double balance;
+    public String ownerName;
+    long bankID;
+
+    public BankAccount(double balance, String ownerName, long bankID) {
+        this.balance = balance;
+        this.ownerName = ownerName;
+        this.bankID = bankID;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+
+    public String getOwnerName() {
+        return ownerName;
+    }
+
+    public void setOwnerName(String ownerName) {
+        this.ownerName = ownerName;
+    }
+
+    public long getBankID() {
+        return bankID;
+    }
+
+    public void setBankID(long bankID) {
+        this.bankID = bankID;
+    }
+
+    void increaseBalance(int amount){
+        balance += amount;
     }
 }
