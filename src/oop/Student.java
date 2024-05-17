@@ -1,9 +1,8 @@
 package oop;
 
 public class Student {
-    int studentID;
-    String name;
-
+    private int studentID;
+    private String name;
     static int studentsCount = 0;
 
     public Student(int studentID, String name) {
@@ -15,17 +14,18 @@ public class Student {
     public String getName() {
         return name;
     }
-    static int getStudentsCount(){
+
+    public static int getStudentsCount() {
         return studentsCount;
     }
 
     public static void main(String[] args) {
         System.out.println(Student.studentsCount);
-        Student a = new Student(1, "Alice");
+        Student a = new Student(44, "Alice");
         System.out.println(a.getName());
-        Student b = new Student(2, "Bob");
+        Student c = new Student(41, "Bob");
         System.out.println(Student.studentsCount);
-        Student c = new Student(3, "Cyril");
+        Student b = new Student(98, "Cyril");
         System.out.println(Student.studentsCount);
     }
 }
